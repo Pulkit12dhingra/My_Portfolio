@@ -1,0 +1,8 @@
+django-admin startproject mysite
+
+python manage.py runserver
+
+python manage.py startapp webapp - create webapp
+
+add webapp to settings.py installed apps name
+then include it in urls.py 
