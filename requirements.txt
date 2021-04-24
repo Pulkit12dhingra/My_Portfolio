@@ -14,4 +14,4 @@ urllib3==1.26.3
 Werkzeug==1.0.1
 wincertstore==0.2
 gunicorn
-whitenoise
+whitenoise==3.2
