@@ -1,0 +1,8 @@
+{% extends "personal/header.html" %}
+{% block content %}
+	<h2>Projects</h2>
+	{% for post in object_list %}
+		<center><a href="/projects/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">{{ post.title }}</a></center>
+		<br>
+	{% endfor %}
+{% endblock %}
