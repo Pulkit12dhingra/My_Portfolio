@@ -8,7 +8,7 @@
 	<br>
 	{% for post in object_list %}
 	<ul>
-		<li><a href="/blog/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">{{ post.title }}</a></li>
+		<li><a data-toggle="tooltip" data-placement="top" title="Click here here to view the Post" href="/blog/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">{{ post.title }}</a></li>
 		<br>
 	</ul>
 	{% endfor %}
