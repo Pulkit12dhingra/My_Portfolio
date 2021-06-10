@@ -1,4 +1,5 @@
 {% extends "personal/header.html" %}
+{% load static %}
 {% block content %}
 	<h2>Blogs</h2>
 	<p style="font-size: 20px; font-weight:500">
@@ -8,7 +9,10 @@
 	<br>
 	{% for post in object_list %}
 	<ul>
-		<li><a data-toggle="tooltip" data-placement="top" title="Click here here to view the Post" href="/blog/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">{{ post.title }}</a></li>
+		<li><a data-toggle="tooltip" data-placement="top" title="Click here here to view the Post" href="/blog/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">
+		<img src="{% static 'blog/gfg.jpg' %}" alt="alternatetext" width="500" height="200">
+			<br>
+		{{ post.title }}</a></li>
 		<br>
 	</ul>
 	{% endfor %}
