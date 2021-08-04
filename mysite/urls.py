@@ -6,5 +6,6 @@ urlpatterns = [
     url(r'^', include('personal.urls')),
     url(r'^blog/', include('blog.urls')),
     url(r'^projects/', include('projects.urls')),
+    url(r'^papers/', include('papers.urls')),
     
 ]

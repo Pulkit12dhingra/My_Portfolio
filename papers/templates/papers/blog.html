@@ -1,0 +1,19 @@
+{% extends "personal/header.html" %}
+{% load static %}
+{% block content %}
+	<h2>Papers</h2>
+	<p style="font-size: 20px; font-weight:500">
+		 Research papers are best sourses for information. Writing a papers combines the knowledge of the topic as well as effective communication and presentation. 
+	</p>
+	<h3> Research papers </h3>
+	<br>
+	{% for post in object_list %}
+	<ul>
+		<li><a data-toggle="tooltip" data-placement="top" title="Click here here to view the Post" href="/papers/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">
+		<img src="{% static 'blog/ijsret.png' %}" alt="alternatetext" width="500" height="500">
+			<br>
+		{{ post.title }}</a></li>
+		<br>
+	</ul>
+	{% endfor %}
+{% endblock %}
